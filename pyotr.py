@@ -60,3 +60,6 @@ def hello_pyotr():
     submissions = get_giraffes(5)
 
     return render_template('pyotr.html', submissions=submissions)
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1')
