@@ -1,0 +1,86 @@
+#pyoContainer {
+    background: url(/static/images/giraffe-wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pyo-header {
+    box-shadow: 2px 2px 2px 2px #444;
+}
+
+.pyo-header-row {
+    padding-left: 42px;
+}
+
+.pyo-header-pic {
+    height: 54px;
+    width: 54px;
+    border: 1px solid #444;
+    border-radius: 30px;
+}
+
+.pyo-header-title {
+    padding-left: 10px;
+}
+
+.pyo-post-container {
+    display: table-row;
+}
+
+.pyo-card-container {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.pyo-post-card.mdl-card {
+    width: 512px;
+    margin: 21px;
+    opacity: 0.90;
+}
+
+.pyo-post-card > .mdl-card__title {
+    height: 100px;
+    background: url('/static/images/pyotr-card.jpg') 50% 65% / cover;
+    color: #fff;
+}
+
+.pyo-post-card > .mdl-card__title > .mdl-card__title-text {
+    margin-left: 25px;
+}
+
+.pyo-post-card > .mdl-card__menu {
+    color: #fff;
+}
+
+.pyo-post-card > .mdl-card__supporting-text {
+    padding-top: 0;
+    line-height: 24px;
+}
+
+.pyo-post-card > .mdl-card__supporting-text > .pyo-post-link {
+    margin-bottom: 5px;
+}
+
+.pyo-post-card > .mdl-card__supporting-text > .pyo-post-link > a {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.pyo-post-card > .mdl-card__actions > .mdl-button {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+@media (max-width: 570px) {
+    .pyo-post-card.mdl-card {
+        width: auto;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pyo-post-card > .mdl-card__title > .mdl-card__title-text {
+        margin-left: 12px;
+    }
+}
