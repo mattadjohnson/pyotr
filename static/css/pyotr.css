@@ -7,6 +7,7 @@
 }
 
 .pyo-header {
+    position: fixed;
     box-shadow: 2px 2px 2px 2px #444;
 }
 
@@ -27,6 +28,7 @@
 
 .pyo-post-container {
     display: table-row;
+    margin-top: 64px;
 }
 
 .pyo-card-container {
@@ -92,6 +94,12 @@
     color: #8A2828;
 }
 
+@media (max-width: 1025px) {
+    .pyo-post-container {
+        margin-top: 56px;
+    }
+}
+
 @media (max-width: 570px) {
     .pyo-post-card.mdl-card {
         width: auto;
@@ -100,6 +108,22 @@
 }
 
 @media (max-width: 400px) {
+    .pyo-header-row {
+        padding-left: 12px;
+    }
+
+    .pyo-header-pic {
+        height: 42px;
+        width: 42px;
+        border: 1px solid #444;
+        border-radius: 30px;
+    }
+
+    .pyo-header-title {
+        padding-left: 5px;
+        font-size: 28px;
+    }
+
     .pyo-post-card > .mdl-card__title > .mdl-card__title-text {
         margin-left: 12px;
     }
