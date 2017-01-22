@@ -68,8 +68,28 @@
     color: rgba(0, 0, 0, 0.87);
 }
 
+.pyo-post-card > .mdl-card__supporting-text > .pyo-post-label {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.pyo-post-card > .mdl-card__supporting-text > .pyo-post-comment {
+    margin-left: 3px;
+}
+
+.pyo-post-card > .mdl-card__supporting-text > .pyo-post-comment a {
+    color: rgba(102, 48, 150, 1.00);
+}
+
 .pyo-post-card > .mdl-card__actions > .mdl-button {
     color: rgba(0, 0, 0, 0.87);
+}
+
+.upvoted {
+    color: #387838;
+}
+
+.downvoted {
+    color: #8A2828;
 }
 
 @media (max-width: 570px) {

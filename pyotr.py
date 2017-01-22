@@ -49,7 +49,15 @@ def get_giraffes(post_limit):
                                                      sort='new',
                                                      syntax='lucene',
                                                      limit=post_limit):
-        submissions.append(submission)
+        result = {}
+        result['title'] = submission.title
+        result['permalink'] = submission.permalink
+        result['author'] = submission.author
+        result['subreddit'] = submission.subreddit
+        result['score'] = submission.score
+        result['comments'] = submission.comments.list()
+
+        submissions.append(result)
 
     return submissions
 
