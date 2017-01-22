@@ -51,9 +51,18 @@
                                     {{submission.title}}
                                 </a>
                             </h6>
-                            <span>Author: /u/{{submission.author}}</span>
+                            <span class="pyo-post-label">Author:</span> /u/{{submission.author}}
                             <br/>
-                            <span>Subreddit: /r/{{submission.subreddit}}</span>
+                            <span class="pyo-post-label">Subreddit:</span> /r/{{submission.subreddit}}
+                            <br/>
+                            <span class="pyo-post-label">Score:</span>
+                            {% if submission.score > 0 %}
+                            <span class="upvoted">{{submission.score}}</span>
+                            {% elif submission.score == 0 %}
+                            <span>{{submission.score}}</span>
+                            {% else %}
+                            <span class="downvoted">{{submission.score}}</span>
+                            {% endif %}
                             {% endfor %}
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
