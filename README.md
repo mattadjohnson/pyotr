@@ -1,2 +1,2 @@
 # pyotr
-Small Flask Application to Display Reddit Search Results About Giraffes
+Small Flask application to display Reddit search results about giraffes
